@@ -1,38 +1,9 @@
 /* ==============================
-   SECTION 1: RESET CSS
-   ============================== */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-html{
-    font-size: 62.5%; /* 16px mult 62.5% = 10 rem */
-}
-body{
-    font: 1.6rem "Montserrat", sans-serif;
-    margin: 0;
-    letter-spacing: 0.1rem; /* 1px */
-    line-height: 1.6;
-    background-color: var(--bgcolor-theme)
-}
-h1, h2, h3, p, figure, ul{
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-   font-weight: normal;
-}
-*{
-    box-sizing: border-box;
-}
-*{
-    box-sizing: border-box;
-}
-ion-icon{
-    vertical-align: -0.4rem;
-}
-
-
-/* ==============================
    SECTION 2: THEME CSS
    ============================== */
+   @import url("reset.css");
 :root{
+
     --bgcolor-theme: #2d3436;
     --bgcolor-header: #222;
     --bgcolor-list: #b2bec3;
@@ -68,7 +39,7 @@ figure figcaption ul{
 figure figcaption ul li{
     padding: 0.5rem;
 }
-figure figcaption ul li:nth-child(2n + 1){
+figure figcaption ul li:nth-child(2n + 2){
     background-color: var(--bgcolor-list);
 }
 /* detail du film */
@@ -86,6 +57,20 @@ footer *{
     color: var(--letter-color);
     line-height: 4.5rem;
 }
+
+/* media queris */
+@media screen and (max-width: 100rem){
+    figure figcaption ul{
+        line-height: 3.5rem;
+    }
+    details p{
+        text-align: left;
+    }
+
+
+}
+    
+
     
 
 
